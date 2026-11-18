@@ -28,5 +28,10 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
+        stage('Docker compose') {
+            steps {
+                sh 'docker compose up -d --build'
+            }
+        }
     }
 }
