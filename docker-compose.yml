@@ -5,4 +5,5 @@ services:
     image: hello:boot
     build: .
     container_name: hello-boot
-  
+    ports:
+      - 8080:8080
