@@ -1,0 +1,8 @@
+name: hello-spring
+
+services:
+  java:
+    image: hello:boot
+    build: .
+    container_name: hello-boot
+  
